@@ -19,5 +19,6 @@
    - `git merge newbranchname` This merges the changes to your master
    - `git branch -d newbranchname` This deletes the old branch
 2. Issue pull request and clean up
-   - Go to github.com and issue a pull request
-   - Delete your old branch
+   - Go to github.com and if things worked correctly you should see the updates and a button iniiating a compare and pull request ![pull request](https://github.com/tanyagupta/tanyagupta.github.io/blob/master/images/pull_request.png?raw=true) 
+   - Create pull request ![open pull request](https://github.com/tanyagupta/tanyagupta.github.io/blob/master/images/openpullrequest.png?raw=true)
+  - If needed delete remote branch `$ git push origin --delete newbranchname`
