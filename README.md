@@ -1,2 +1,2 @@
 # codeblogs
-This repo contains blog text, code snippets and github howtos
+This repo contains blog text for code, code snippets and github howtos. 
