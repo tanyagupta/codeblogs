@@ -20,7 +20,7 @@
    - Now add the upstream path
     `git remote add upstream git@github.com:TheUserName/the-remote-file.git` 
     
-    (if you are adding it for the first time OR substitute `add` with`set-url` if you have already set it and want to change it. If you to `add` and the remote has already been added you will get an error
+   (if you are adding it for the first time OR substitute `add` with`set-url` if you have already set it and want to change it. If you to `add` and the remote has already been added you will get an error
 
 You should see something similar to the following. 
 
