@@ -1,4 +1,4 @@
-#First time set up
+# First time set up
 ## Git
 1. Download [git](https://git-scm.com/downloads)
 1. `git config --global user.name "Tanya Gupta"` to set up the user name
