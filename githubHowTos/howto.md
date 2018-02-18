@@ -59,11 +59,13 @@ Then `ssh-add -K ~/.ssh/id_rsa` to add SSH key to the ssh-agent
    origin	git@github.com:tanyagupta/codeblogs.git (push)
 ```
    - Now add the upstream path
+
     `git remote add upstream git@github.com:TheUserName/the-remote-file.git`
 
 Note that you should only use add if you are setting it for the first time. If the upstream has already been set and you are changing it, do not use add as it will give you an error. In this situation, substitute `add` with`set-url`, the rest of the command is the same.
 
 Now you should see something similar to the following when you `git remote -v`
+
 
 ```
    origin	git@github.com:tanyagupta/codeblogs.git (fetch)
@@ -74,8 +76,8 @@ Now you should see something similar to the following when you `git remote -v`
    - If you go away and come back and changes have occurred in the meanwhile, make sure you have the latest version. `git pull upstream development && git push` development is the name of the branch you want to pull from
 
    - Issue pull request and clean up
-   - Go to github.com and if things worked correctly you should see the updates and a button iniiating a compare and pull request ![pull request](https://github.com/tanyagupta/tanyagupta.github.io/blob/master/images/pull_request.png?raw=true)
-   - Create pull request ![open pull request](https://github.com/tanyagupta/tanyagupta.github.io/blob/master/images/openpullrequest.png?raw=true)
+
+
 
 
 #### Once the pull request is accepted and the proposed changes have been merged, you can take care of your own codebase and clean up
