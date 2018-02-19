@@ -111,6 +111,7 @@ git remote set-url origin git@github.com:tanyagupta/googleMaps-offline-navigator
 | git checkout branchname |Switches to an existing branch|
 |git branch -a|See all branches|
 |ls -a|Shows Hidden directories|
+|git rebase master development| where development is the branch that needs to be aligned with master. Rebasing is tricky so check out this [reference](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)|
 
 ## Resources
 - [Git Basics](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)   
