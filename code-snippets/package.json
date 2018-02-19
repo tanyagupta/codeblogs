@@ -1,0 +1,16 @@
+{
+  "name": "code-snippets",
+  "version": "1.0.0",
+  "description": "code snippets for cool es6 blogs",
+  "main": "demo_all.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sets": "node sets.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "codeblogs"
+  },
+  "author": "Abir and Tanya",
+  "license": "ISC"
+}
