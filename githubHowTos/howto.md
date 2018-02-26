@@ -88,6 +88,13 @@ Now you should see something similar to the following when you `git remote -v`
    - `git branch -d newbranchname` This deletes the old branch
    - If needed delete remote branch `$ git push origin --delete newbranchname`
 
+### Stash
+The git stash command takes your uncommitted changes (both staged and unstaged), saves them away for later use, and then reverts them from your working copy
+
+``$ git stash``
+
+See [link](https://www.atlassian.com/git/tutorials/git-stash) for more
+
 ## Additional information
 ### Using HTTPS vs SSH
 Some combinations that could be used
