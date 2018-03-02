@@ -108,7 +108,10 @@ git remote add origin https://github.com/tanyagupta/googleMaps-offline-navigator
 git remote set-url origin https://github.com/tanyagupta/googleMaps-offline-navigator.com
 git remote set-url origin git@github.com:tanyagupta/googleMaps-offline-navigator.git  
 ```
-
+### Terms
+| Term | What it means |
+| ------------- | ------------- |
+| Upstream and origin | Upstream generally refers to the original repo that you have forked and the origin is your fork which is your own repo on GitHub and the clone of the original repo of GitHub. From Github: *When a repo is cloned, it has a default remote called origin that points to your fork on GitHub, not the original repo it was forked from.To keep track of the original repo, you need to add another remote named upstream*|
 
 | Command  | What it does |
 | ------------- | ------------- |
@@ -130,3 +133,4 @@ git remote set-url origin git@github.com:tanyagupta/googleMaps-offline-navigator
 - [Stackoverflow](https://stackoverflow.com/questions/9257533/what-is-the-difference-between-origin-and-upstream-on-github)
 - [Don't be afraid to commit](http://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html)
 - [Atlassian](https://www.atlassian.com/git/tutorials/using-branches/git-merge) 
+*
