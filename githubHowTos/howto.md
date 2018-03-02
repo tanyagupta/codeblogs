@@ -115,6 +115,8 @@ git remote set-url origin git@github.com:tanyagupta/googleMaps-offline-navigator
 | git remote -v   | shows origin and remote  |
 | git status  | shows files staged, commited or changed  |
 |git branch -d newbranchname|deletes a branch, -d option is an alias for --delete, which only deletes the branch if it has already been fully merged in. its upstream branch. (You could also use -D, which is an alias for --delete --force, which deletes the branch "irrespective of its merged status) |
+|git pull upstream development && git push | pulls latest changes from upstream branch development and also pushes the changes to your github account|
+|git remote rename oldname newname | renames remote [More](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
 | git checkout branchname |Switches to an existing branch|
 |git branch -a|See all branches|
 |ls -a|Shows Hidden directories|
