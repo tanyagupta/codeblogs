@@ -8,7 +8,7 @@ The iterable object can be user supplied as long as it implements the [iterable 
 
 
 ### The Meaning
-When used as rest parameters, the dots "pack" many variables in to an array. So if we call the `foo` function defined above with `foo(5,6,9`, inside foo, a will be 5, and b will be an array of [6,9].  When used as a spread operator the dots "unpack" variables. So, inside `foo` one can write code like `big_array= [5,11,2,...b,4]`, and b will expand to it's elements as we will have an array with `[5,11,2,6,9,4]` 
+When used as rest parameters, the dots "pack" many variables in to an array. So if we call the `foo` function defined above with `foo(5,6,9)`, inside foo, a will be 5, and b will be an array of [6,9].  When used as a spread operator the dots "unpack" variables. So, inside `foo` one can write code like `big_array= [5,11,2,...b,4]`, and b will expand to it's elements as we will have an array with `[5,11,2,6,9,4]` 
 ///When foo is called a will be assigned to the value of the first argument, the rest of the arguments will be
 // packed in an array and assigned to rest
 
