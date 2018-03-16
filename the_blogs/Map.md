@@ -57,8 +57,8 @@ function multBy5 (a) {
 
 
 
-##Bonus
-####You can use the handy function below, which given a key-value Object will return the Map object
+## Bonus
+#### You can use the handy function below, which given a key-value Object will return the Map object
 
 
 ```javascript
