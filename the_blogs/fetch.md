@@ -1,4 +1,4 @@
-#Tame the API calls like a pro using ES6's fetch
+# Tame the API calls like a pro using ES6's fetch
 
 [The ECMAScript® 2015 Language Specification](http://www.ecma-international.org/ecma-262/6.0/), more popularly known as **ES6** is the first major revision of Javascript in the last 15 years. It comes loaded with new features. Some of them even the newbies can use, quite easily.
 
