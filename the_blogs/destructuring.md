@@ -26,7 +26,7 @@ In one swoop (a.k.a. one line of code) the destructuring allows a programmer to 
 
 ES6 and its new features  are now a fact of life. We the newbies have to learn to live with and use it to our advantage. Here are some cool stuff that a newbie can do with destructring:
 
-###Single Statment Variable Swap
+### Single Statment Variable Swap
 
 Get rid of the pesky temp variable and three lines of code  or (some of your geeky XORs) and swap variables in one shot. 
 
@@ -39,7 +39,7 @@ console.log(b); // 1
 ```
 
 
-###Parse function `returns` like a Pro
+### Parse function `returns` like a Pro
 ```javascript 
 function f() {
   return [1, 2];
@@ -52,7 +52,7 @@ console.log(b); // 2
 
 ```
 
-###Remove duplicates from Arrays
+### Remove duplicates from Arrays
 Create a duplicate free arrays in one shot. This one needs to know Sets too!
 
 ```javascript 
