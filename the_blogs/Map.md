@@ -1,4 +1,4 @@
-##Take your Javascript objects to a new level using ES6 Maps 
+## Take your Javascript objects to a new level using ES6 Maps 
 
 
 Maps are one of the new language features in ES6. In terms of functionality they are somewhat similar to objects, but as we will see in this blog they are way more versatile. 
