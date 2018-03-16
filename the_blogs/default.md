@@ -1,4 +1,4 @@
-##Make your ES6 functions robust using the new default function parameters
+## Make your ES6 functions robust using the new default function parameters
 
 
 Codes crash!  
