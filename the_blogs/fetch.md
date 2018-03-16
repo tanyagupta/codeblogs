@@ -7,7 +7,7 @@ One of the challenges for many web programmers is to efficiently leverage the va
 The new fetch method in ES6 is not only accessible it is also quite versatile. 
 
 
-> ###If you just want to make a call to an API and get some JSON data
+> ### If you just want to make a call to an API and get some JSON data
 
 ```javascript
 function fetch_simple (url) {
@@ -24,8 +24,8 @@ function fetch_simple (url) {
 ```
 
 > ### Let's turn things up a notch. 
-> ###Maybe you need to make an API call to get some initial data and then use that data to make another call. 
-> ###No Problem!
+> ### Maybe you need to make an API call to get some initial data and then use that data to make another call. 
+> ### No Problem!
 
 ```javascript
 function fetch_depentent () {
