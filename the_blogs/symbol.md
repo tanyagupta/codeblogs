@@ -2,13 +2,13 @@
 
 [The ECMAScript® 2015 Language Specification](http://www.ecma-international.org/ecma-262/6.0/), more popularly known as **ES6** is the first major revision of Javascript in the last 15 years. Naturally it offers many features that will change how the veterans code. But there are some features that will affect the newbies too. 
 
-One such feature is a curious primitive called the symbol (and its associated creator function `Symbol()`). Symbol in lay programmer's term is a value that is guarantied to be unique during an apps lifetime.  If we write code like, `var id = Symbol('id');` then id's value is unique. If somewhere else I write `var aid = Symbol('id');`, aid === id will be false. 
+One such feature is a curious primitive called the symbol (and its associated creator function `Symbol()`). Symbol in lay programmer's term is a value that is guaranteed to be unique during an app's lifetime.  If we write code like, `var id = Symbol('id');` then id's value is unique. If somewhere else I write `var aid = Symbol('id');`, aid === id will be false. 
 
 
-###So what? 
+### So what? 
 Best explained in code. Two teams working on a project. They do not know of each other. They both access a global object, `const global_data  = new Map();`
 
-##Team A
+## Team A
 
 
 ```javascript
@@ -31,7 +31,7 @@ function team_a_world (){
   return outside_portal
 }
 ```
-##Team B
+## Team B
 
 ```javascript
 function team_b_world () {
