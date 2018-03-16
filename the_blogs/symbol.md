@@ -1,4 +1,4 @@
-##ES6 Symbol for worry free team code development
+## ES6 Symbol for worry free team code development
 
 [The ECMAScript® 2015 Language Specification](http://www.ecma-international.org/ecma-262/6.0/), more popularly known as **ES6** is the first major revision of Javascript in the last 15 years. Naturally it offers many features that will change how the veterans code. But there are some features that will affect the newbies too. 
 
