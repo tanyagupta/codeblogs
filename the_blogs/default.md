@@ -1,8 +1,8 @@
 ## Make your ES6 functions robust using the new default function parameters
 
 
-Codes crash!  
-And for the newbies codes crash frequently!  
+Code crashes!  
+And for the newbies code crashes frequently!  
 
 Sometimes just a missing value of a parameter can break your function and in turn the whole app. So we crave for language support that help us write robust code.  ES6's default function parameter is one such welcome feature.  
 
