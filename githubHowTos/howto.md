@@ -125,6 +125,11 @@ git remote set-url origin git@github.com:tanyagupta/googleMaps-offline-navigator
 |ls -a|Shows Hidden directories|
 |git rebase master development| where development is the branch that needs to be aligned with master. Rebasing is tricky so check out this [reference](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)|
 |git reset --hard master|when you are on development, use this command to abandon any changes made to branch development and just replicate what is on branch master|
+|git stash|Saves uncommited changes for later use (will not do this for untracked or ignored files|
+|git stash pop|Removes the changes saved in stash and reapplies them to the working copy|
+|git stash apply|Keeps both the stash and also reapplies changes to working copy|
+|git stash list| shows all your stashes|
+|git branch -a|Shows all remote and local branches|
 
 ## Resources
 - [Git Basics](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)   
