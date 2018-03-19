@@ -130,6 +130,7 @@ git remote set-url origin git@github.com:tanyagupta/googleMaps-offline-navigator
 |git stash apply|Keeps both the stash and also reapplies changes to working copy|
 |git stash list| shows all your stashes|
 |git branch -a|Shows all remote and local branches|
+|git clone https://github.com/tanyagupta/offline-uscitizenship-flashcards --branch new-UI --single-branch|Clone one specific branch. Here the url is the url of the repo and new-UI is the name of the branch. If you are not in the destination folder already add the branch name like so `it clone <url> --branch <branch>--single-branch [<folder>]`
 
 ## Resources
 - [Git Basics](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)   
