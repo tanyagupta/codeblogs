@@ -131,13 +131,12 @@ git remote set-url origin git@github.com:tanyagupta/googleMaps-offline-navigator
 |git stash list| shows all your stashes|
 |git branch -a|Shows all remote and local branches|
 |`git clone https://github.com/tanyagupta/offline-uscitizenship-flashcards --branch new-UI --single-branch`|Clone one specific branch. Here the url is the url of the repo and new-UI is the name of the branch. If you are not in the destination folder already add the branch name like so `it clone <url> --branch <branch>--single-branch [<folder>]`
-|`git://github.com/tanyagupta/offline-uscitizenship-flashcards.git` 
-`git fetch origin` 
-`git checkout -b new-UI origin/new-UI` 
-`git merge development` 
-`git checkout development`
-`git merge --no-ff new-UI` 
-`git push origin development`| This is how you would "copy" from new-UI branch which has the latest changes to development which has the older code via command line and also resolve conflicts and perform a manual merge. |
+|`git://github.com/tanyagupta/offline-uscitizenship-flashcards.git 
+git fetch origin 
+git checkout -b new-UI origin/new-UI  
+git merge development 
+git checkout development 
+git merge --no-ff new-UI git push origin development`| This is how you would "copy" from new-UI branch which has the latest changes to development which has the older code via command line and also resolve conflicts and perform a manual merge. |
 
 ## Resources
 - [Git Basics](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)   
