@@ -38,6 +38,9 @@ Then `ssh-add -K ~/.ssh/id_rsa` to add SSH key to the ssh-agent
 1. Enter a title, paste key, and click Add SSH key
 1. Confirm your Github password
 
+#### NOTE
+If you get the error *ssh fails with packet_write_wait: Broken pipe*, go to your *config* file in your .ssh and add the line *IPQoS=throughput*
+[(see source)](https://bbs.archlinux.org/viewtopic.php?id=239961) 
 
 # Getting started
 1. Fork the project you need from the github page ![fork](https://camo.githubusercontent.com/9aa6c12b0a100ea4be6215ea84ea12556e4dc013/68747470733a2f2f68656c702e6769746875622e636f6d2f6173736574732f696d616765732f68656c702f7265706f7369746f72792f666f726b5f627574746f6e2e6a7067)
