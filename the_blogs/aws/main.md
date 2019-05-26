@@ -4,7 +4,7 @@ When making changes to the code of an AWS lambda endpoint, we do not want our li
 
 The frozen code is the code that is running as the live endpoint. To create the “frozen” code we need to make a version of this code. Versioning creates an immutable duplicate of the code that is being versioned. [See how to make a version](how_to_make_a_version.md). Let use assume that it is called version1
 
-We then create an alias for version1 and give it any name we want <See how to make an alias>. Here we assume that the name is prod1.  We also need to add a trigger to the alias so that it is linked to Alexa skills kit and the skill id in question <See how to add a trigger to the alias>
+We then create an alias for version1 and give it any name we want [How to create an alias](how_to_create_an_alias.md). Here we assume that the name is prod1.  We also need to add a trigger to the alias so that it is linked to Alexa skills kit and the skill id in question <See how to add a trigger to the alias>
 
 We now set prod1 as the end point. <How to include the new endpoint> Now the current code can continue to be updated and changed.
 
