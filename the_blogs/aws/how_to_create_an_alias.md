@@ -1,3 +1,4 @@
+# How to create an alias
 Make sure the version you are creating an alias for is selected under qualifiers
 ![qualifiers](../assets/8_qualifiers.png)
 
