@@ -8,6 +8,6 @@ We then create an alias for version1 and give it any name we want [See how to cr
 
 We now set prod1 as the end point. <How to include the new endpoint> Now the current code can continue to be updated and changed.
 
-When we are ready for our next production version, we are ready to create another version. Let’s call it v2. We then point prod1 to v2. <How to point the alias to a new version> At that point v2 becomes live.
+When we are ready for our next production version, we are ready to create another version. Let’s call it v2. We then point prod1 to v2. [How to point the alias to a new version](how_to_point_alias_to_new_version.md) At that point v2 becomes live.
 
 We can now delete v1 as we are no longer using it. Alternatively we can leave it for audit/archive purposes.
