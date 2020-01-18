@@ -84,10 +84,12 @@ print(reviews_ints[:30])
 1. ```list.sort()``` method is only defined for lists. In contrast, the sorted() function accepts any iterable.
 
 ## What does this code do ?
+### Code #1
 ```
 review_lens = Counter([len(x) for x in reviews_ints])
 ```
 The code above takes each item in reviews_ints (which btw is a list of numbers like so ```[[21025, 308, 6, 3, 1050, 207...23]]```) and calculates the length of each element (i.e. review) such that the key is the length and the value is the item. It will kind of look like ```Counter({132: 185, 130: 185, 135: 178, 129: 177, 125: 177, 128: 173, 137: 171, 133: 171, 138: 170, 136: 170........0:1})```
+### Code #2
 ```
 non_zero_idx = [ii for ii, review in enumerate(reviews_ints) if len(review) != 0]
 ```
@@ -100,6 +102,7 @@ For example:
 [0, 1, 2]
 ```
 The code ignores the last element of the array since the length is zero.  
+### Code #3
 ```
 reviews_ints = [reviews_ints[ii] for ii in non_zero_idx]
 encoded_labels = np.array([encoded_labels[ii] for ii in non_zero_idx])
