@@ -82,3 +82,46 @@ print(reviews_ints[:30])
 1. Python lists have a built-in ```list.sort()``` method that modifies the list in-place.
 1. There is also a ```sorted()``` built-in function that builds a new sorted list from an iterable.
 1. ```list.sort()``` method is only defined for lists. In contrast, the sorted() function accepts any iterable.
+
+## What does this code do ?
+```
+review_lens = Counter([len(x) for x in reviews_ints])
+```
+The code above takes each item in reviews_ints (which btw is a list of numbers like so ```[[21025, 308, 6, 3, 1050, 207...23]]```) and calculates the length of each element (i.e. review) such that the key is the length and the value is the item. It will kind of look like ```Counter({132: 185, 130: 185, 135: 178, 129: 177, 125: 177, 128: 173, 137: 171, 133: 171, 138: 170, 136: 170........0:1})```
+```
+non_zero_idx = [ii for ii, review in enumerate(reviews_ints) if len(review) != 0]
+```
+```enumerate``` takes as a parameter some object that can be iterated over and returns a tuple containing a count (from start that defaults to 0) and the values obtained by iterating over the iterable. So the code above looks at whether the length of the review is zero, and if it not zero, then it captures the index in an array.
+
+For example:
+```
+>>> review_ints = [[21025, 308, 6, 3, 1050, 207],[2838,234,3,5,66],[345,3,8,9,34],[]]
+>>> [ii for ii, review in enumerate(review_ints) if len(review) != 0]
+[0, 1, 2]
+```
+The code ignores the last element of the array since the length is zero.  
+```
+reviews_ints = [reviews_ints[ii] for ii in non_zero_idx]
+encoded_labels = np.array([encoded_labels[ii] for ii in non_zero_idx])
+```
+The code above takes the non zero indices and gets the element that the indices refer to. However now the zeros have been removed.
+Encoded labels creates an array of the labels of all the non zero items.
+Similar to:
+```[1 0 1 0 1 0 1 0 1 0 1 0 1 0 1]```
+
+## Padding
+To deal with both short and very long reviews, we'll pad or truncate all our reviews to a specific length. For reviews shorter than some seq_length, we'll pad with 0s. For reviews longer than seq_length, we can truncate them to the first seq_length words. A good seq_length, in this case, is 200.
+
+### Exercise: Define a function that returns an array features that contains the padded data, of a standard size, that we'll pass to the network.
+
+The data should come from review_ints, since we want to feed integers to the network.
+Each row should be seq_length elements long.
+For reviews shorter than seq_length words, left pad with 0s. That is, if the review is ```['best', 'movie', 'ever'], [117, 18, 128]``` as integers, the row will look like ```[0, 0, 0, ..., 0, 117, 18, 128]```.
+For reviews longer than seq_length, use only the first seq_length words as the feature vector.
+As a small example, if the seq_length=10 and an input review is:
+
+```[117, 18, 128]```
+The resultant, padded sequence should be:
+
+```[0, 0, 0, 0, 0, 0, 0, 117, 18, 128]```
+Your final features array should be a 2D array, with as many rows as there are reviews, and as many columns as the specified seq_length.
