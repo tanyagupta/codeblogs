@@ -117,14 +117,10 @@ To deal with both short and very long reviews, we'll pad or truncate all our rev
 
 ### Exercise: Define a function that returns an array features that contains the padded data, of a standard size, that we'll pass to the network.
 
-The data should come from review_ints, since we want to feed integers to the network.
-Each row should be seq_length elements long.
-For reviews shorter than seq_length words, left pad with 0s. That is, if the review is ```['best', 'movie', 'ever'], [117, 18, 128]``` as integers, the row will look like ```[0, 0, 0, ..., 0, 117, 18, 128]```.
-For reviews longer than seq_length, use only the first seq_length words as the feature vector.
-As a small example, if the seq_length=10 and an input review is:
-
-```[117, 18, 128]```
-The resultant, padded sequence should be:
-
-```[0, 0, 0, 0, 0, 0, 0, 117, 18, 128]```
-Your final features array should be a 2D array, with as many rows as there are reviews, and as many columns as the specified seq_length.
+*The data should come from review_ints, since we want to feed integers to the network.
+Each row should be seq_length elements long.*
+*For reviews shorter than seq_length words, left pad with 0s. That is, if the review is* ```['best', 'movie', 'ever'], [117, 18, 128]``` *as integers, the row will look like* ```[0, 0, 0, ..., 0, 117, 18, 128]```.
+*For reviews longer than seq_length, use only the first seq_length words as the feature vector.
+As a small example, if the seq_length=10 and an input review is:* ```[117, 18, 128]```
+*The resultant, padded sequence should be:* ```[0, 0, 0, 0, 0, 0, 0, 117, 18, 128]```
+*Your final features array should be a 2D array, with as many rows as there are reviews, and as many columns as the specified seq_length.*
