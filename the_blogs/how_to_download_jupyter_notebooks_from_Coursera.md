@@ -1,4 +1,4 @@
-# How to download resources from Coursera
+# How to download Jupyter notebook resources from Coursera
 1. Go to the home of the coursera-notebook hub
 1. Create a new python notebook
 1. Execute !tar cvfz allfiles.tar.gz * in a cell
