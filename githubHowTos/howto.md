@@ -45,7 +45,7 @@ If you get the error *ssh fails with packet_write_wait: Broken pipe*, go to your
 # Getting started
 1. Fork the project you need from the github page ![fork](https://camo.githubusercontent.com/9aa6c12b0a100ea4be6215ea84ea12556e4dc013/68747470733a2f2f68656c702e6769746875622e636f6d2f6173736574732f696d616765732f68656c702f7265706f7369746f72792f666f726b5f627574746f6e2e6a7067)
 1. Clone the repo you need: `git clone git@github.com:tanyagupta/codeblogs.git` You could also have done `git clone https://https://github.com/tanyagupta/codeblogs`. However many prefer using SSH instead of HTTPS to avoid entering a password each time although Github [recommends](https://help.github.com/articles/which-remote-url-should-i-use/) using HTTPS instead of SSH
-1. Create a new branch `git checkout -b newbranchname` to make your changes on
+1. Once in the new directory, create a new branch `git checkout -b newbranchname` to make your changes on
 1.  Make changes and commit
     - Make changes to file(s) as needed
     - Assuming only one file is changed, `git status` should show one file modified in red
