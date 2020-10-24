@@ -92,9 +92,12 @@ Now you should see something similar to the following when you `git remote -v`
    - If needed delete remote branch `$ git push origin --delete newbranchname`
 
 ### Stash
+This is useful if there is a merge conflict between your local copy and the remote. Let's say you want to pull the latest changes but some changes you have made locally also needs to be incorporated. 
+
 The git stash command takes your uncommitted changes (both staged and unstaged), saves them away for later use, and then reverts them from your working copy
 
 ``$ git stash``
+To resolve the conflict first "stash" your changes so you can pull the latest from the remote. Then pull any changes so that you do not have any conflict. Once the changes have been pulled, ``git apply`` to keep the stash changes and apply them to the latest version. Now resolve all the conflicts. Then commit and push your own changes if you need to. Finally `git stash drop` to drop the stash
 
 See [link](https://www.atlassian.com/git/tutorials/git-stash) for more
 
