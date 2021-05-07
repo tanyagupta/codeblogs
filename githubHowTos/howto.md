@@ -26,7 +26,7 @@ Host *
  AddKeysToAgent yes
  UseKeychain yes
  IdentityFile ~/.ssh/id_rsa
-``` 
+```
 
 Then `ssh-add -K ~/.ssh/id_rsa` to add SSH key to the ssh-agent
 
@@ -40,7 +40,7 @@ Then `ssh-add -K ~/.ssh/id_rsa` to add SSH key to the ssh-agent
 
 #### NOTE
 If you get the error *ssh fails with packet_write_wait: Broken pipe*, go to your *config* file in your .ssh and add the line *IPQoS=throughput*
-[(see source)](https://bbs.archlinux.org/viewtopic.php?id=239961) 
+[(see source)](https://bbs.archlinux.org/viewtopic.php?id=239961)
 
 # Getting started
 1. Fork the project you need from the github page ![fork](https://camo.githubusercontent.com/9aa6c12b0a100ea4be6215ea84ea12556e4dc013/68747470733a2f2f68656c702e6769746875622e636f6d2f6173736574732f696d616765732f68656c702f7265706f7369746f72792f666f726b5f627574746f6e2e6a7067)
@@ -92,7 +92,7 @@ Now you should see something similar to the following when you `git remote -v`
    - If needed delete remote branch `$ git push origin --delete newbranchname`
 
 ### Stash
-This is useful if there is a merge conflict between your local copy and the remote. Let's say you want to pull the latest changes but some changes you have made locally also needs to be incorporated. 
+This is useful if there is a merge conflict between your local copy and the remote. Let's say you want to pull the latest changes but some changes you have made locally also needs to be incorporated.
 
 The git stash command takes your uncommitted changes (both staged and unstaged), saves them away for later use, and then reverts them from your working copy
 
@@ -143,6 +143,7 @@ git remote set-url origin git@github.com:tanyagupta/googleMaps-offline-navigator
 |`$ git push -d <remote_name> <branch_name> and $ git branch -d <branch_name>`|Delete local and remote branch. Remote branch is usually origin. [See link](https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-both-locally-and-remotely)|
 |First make sure your remotes are set up correctly (see above - getting started #5). Then `git checkout -b <branch-name>` to create a new branch and check it out
 The remote branch is automatically created when you push it to the remote server. So you can just do: `git push <remote-name> <branch-name>` |How do you create a remote Git branch?|
+This command will cause git to untrack your directory and all files under it without actually deleting them: `git rm -r --cached <your directory>`. The `-r` option causes the removal of all files under your directory. The `--cached` option causes the files to only be removed from git's index, not your working copy. By default `git rm <file>` would delete `<file>`. |How do you ignore an already tracked directory in git?|
 
 ## Resources
 - [Git Basics](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)   
@@ -151,5 +152,4 @@ The remote branch is automatically created when you push it to the remote server
 - [Collaborative Github work](Collaborative_Github_Workflow%20%20%20%20)
 - [Stackoverflow](https://stackoverflow.com/questions/9257533/what-is-the-difference-between-origin-and-upstream-on-github)
 - [Don't be afraid to commit](http://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html)
-- [Atlassian](https://www.atlassian.com/git/tutorials/using-branches/git-merge) 
-
+- [Atlassian](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
