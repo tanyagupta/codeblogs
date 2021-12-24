@@ -65,7 +65,7 @@ If you get the error *ssh fails with packet_write_wait: Broken pipe*, go to your
 
     `git remote add upstream git@github.com:TheUserName/the-remote-file.git`
 
-Note that you should only use add if you are setting it for the first time. If the upstream has already been set and you are changing it, do not use add as it will give you an error. In this situation, substitute `add` with`set-url`, the rest of the command is the same. git remote set-url origin <new_url>
+Note that you should only use add if you are setting it for the first time. If the upstream has already been set and you are changing it, do not use add as it will give you an error. In this situation, substitute `add` with`set-url`, the rest of the command is the same. `git remote set-url origin <new_url>`
 
 Now you should see something similar to the following when you `git remote -v`
 
