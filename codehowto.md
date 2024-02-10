@@ -1,7 +1,7 @@
 
 ## pipenv set up
 1. The modern mac shell is zshell not bash
-1. ls -.a shows hidden files         
+1. ls -a shows hidden files         
 1. If you see .zshrc then you know we are using zshell
 1. edit the .zshrc file through atom or other editor
 1. add line at end export PATH=$PATH: path name
